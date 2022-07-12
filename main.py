@@ -3,8 +3,11 @@ from turtle import Turtle, Screen
 
 def main():
     tim = Turtle()
-    tim.color("black", "black")
-    tim.forward(100)
+    for _ in range(15):
+        tim.forward(10)
+        tim.penup()
+        tim.forward(10)
+        tim.pendown()
 
     screen = Screen()
     screen.exitonclick()
